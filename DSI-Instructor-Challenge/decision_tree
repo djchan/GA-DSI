@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<perimeter_sd_error &le; 0.051<br/>gini = 0.468<br/>samples = 398<br/>value = [249, 149]<br/>class = M>, fillcolor="#f5ccaf"] ;
+1 [label=<radius_mean &le; 14.78<br/>gini = 0.1<br/>samples = 245<br/>value = [232, 13]<br/>class = M>, fillcolor="#e68844"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<fractal_dimension_mean &le; 0.111<br/>gini = 0.06<br/>samples = 225<br/>value = [218, 7]<br/>class = M>, fillcolor="#e6853f"] ;
+1 -> 2 ;
+3 [label=<gini = 0.02<br/>samples = 200<br/>value = [198, 2]<br/>class = M>, fillcolor="#e5823b"] ;
+2 -> 3 ;
+4 [label=<gini = 0.32<br/>samples = 25<br/>value = [20, 5]<br/>class = M>, fillcolor="#eca06a"] ;
+2 -> 4 ;
+5 [label=<gini = 0.42<br/>samples = 20<br/>value = [14, 6]<br/>class = M>, fillcolor="#f0b78e"] ;
+1 -> 5 ;
+6 [label=<fractal_dimension_mean &le; 0.147<br/>gini = 0.198<br/>samples = 153<br/>value = [17, 136]<br/>class = M>, fillcolor="#52a9e8"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<gini = 0.498<br/>samples = 32<br/>value = [15, 17]<br/>class = M>, fillcolor="#e8f3fc"] ;
+6 -> 7 ;
+8 [label=<fractal_dimension_mean &le; 0.159<br/>gini = 0.033<br/>samples = 121<br/>value = [2, 119]<br/>class = M>, fillcolor="#3c9fe5"] ;
+6 -> 8 ;
+9 [label=<gini = 0.18<br/>samples = 20<br/>value = [2, 18]<br/>class = M>, fillcolor="#4fa8e8"] ;
+8 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 101<br/>value = [0, 101]<br/>class = M>, fillcolor="#399de5"] ;
+8 -> 10 ;
+}
